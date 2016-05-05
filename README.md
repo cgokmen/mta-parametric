@@ -12,7 +12,7 @@ Input follows the following format, with expressions in terms of the variable t:
 <br>
 For example:
 
-    /pm 5sint 5cost t
+    /pm sin(t) cos(t) t
     
 is the definition of a helix of a radius of 5 meters, at the center of the map.
 
@@ -22,6 +22,15 @@ To reset the display, use the command
     /pm
     
 without arguments.
+
+## Examples:
+### Helix:
+
+    /pm sin(t) cos(t) t
+    
+### Spiral
+
+    /pm t*sin(t) t*cos(t) t
 
 ## Credits
 This resource uses a modified version of the [EvalExpression](https://github.com/jbp4444/EvalExpression) mathematical expression evaluator by [@jbp4444](https://github.com/jbp4444/) in order to calculate the values for its data points.
